@@ -13,7 +13,7 @@ export default function Home() {
     const textArray = text.split("");
     console.log(textArray);
     const result = textArray.map((char, index) =>
-      index % 2 === 0 ? char.toUpperCase() : char.toLowerCase(),
+      index % 2 === 0 ? char.toLowerCase() : char.toUpperCase(),
     );
 
     setConvertedText(result.join(""));
@@ -21,7 +21,7 @@ export default function Home() {
   }
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 max-w-[500px] mx-auto">
-      <p className="text-6xl font-bold">Insert your text here</p>
+      <p className="text-6xl font-bold">Insert your text below</p>
       <Input
         className="mt-8 border-2 border-black rounded-md p-4 w-full"
         placeholder="Insert your text here"
